@@ -1,65 +1,68 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Hyper Queue - Mate1</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-	</head>
-	<body>
-		<div class="container">
-			<div class="well well-sm quick-contact row col-md-12 row">
-				<div class="col-md-4">
-					<h1 class="title-contact">Mate1</h1>
-				</div>
-				<div class="col-md-4 contact-email">
-					<h2>Mate1</h2>
-				</div>
-				
-							<input type="reset" name="producer" id="changeViewBtn" value="Change to Consumer" class="btn btn-info pull-right">
+<head>
+	<meta charset="UTF-8">
+	<title>Hyper Queue - Mate1</title>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="well well-sm quick-contact row col-md-12 row">
+			<div class="col-md-4">
+				<h1 class="title-contact">Mate1</h1>
 			</div>
-			<div class="row">
-				<div class="page-header">
-					<h2>Hyper Queue - Concurrent FIFO Queue Messaging</h2>
-				</div>
-				<form class="form-horizontal">
-					<fieldset>
-						<!-- Form Name -->
-						</div>
-						<!-- Text input-->
-						<div class="form-group">
-							<legend>
-								<h3>Request</h3>
-							</legend>
-							<div class="alert alert-success" id="successAlert"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong></div>
-							<div class="alert alert-danger" id="errorAlert"><span class="glyphicon glyphicon-alert"></span><strong> Error! Check logs.</strong></div>
-							<div class="well well-sm" id="requieredAlert"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field! Please fill all area.</strong></div>
-							<div class="form-group">
-								<label for="InputName">Topic Name</label>
-								<div class="input-group">
-									<input type="text" class="form-control" name="topicInput" id="topicInput" placeholder="Enter Topic Name" required>
-									<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-								</div>
-							</div>
-							<div id="messageForm" class="form-group">
-								<label for="InputMessage">Message</label>
-								<div class="input-group">
-									<input type="text" class="form-control" id="messageInput" name="messageInput" placeholder="Enter Message" required>
-									<span id="messageGlyficon" class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-								</div>
-							</div>
-							<input type="submit" name="sendMessageBtn" id="sendMessageBtn" value="Send Message" class="btn btn-info pull-right">
-							<legend>
-								<h3>Response</h3>
-							</legend>
-							<textarea class="form-control" id="responseArea" name="message" placeholder="Waiting Response" rows="5"></textarea>
-						</div>
-					</fieldset>
-				</form>
+			<div class="col-md-4 contact-email">
+				<h2>Mate1</h2>
 			</div>
+			<input type="reset" name="producer" id="changeViewBtn" value="Change to Consumer" class="btn btn-info pull-right">
 		</div>
-		<script src="js/jquery-1.7.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/client.js"></script>
-	</body>
+		<div class="row">
+			<div class="page-header">
+				<h2>Hyper Queue - Concurrent FIFO Queue Messaging</h2>
+			</div>
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+						<legend>
+						<h3>Request</h3>
+						</legend>
+						<div class="alert alert-success" id="successAlert">
+							<strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong>
+						</div>
+						<div class="alert alert-danger" id="errorAlert">
+							<span class="glyphicon glyphicon-alert"></span><strong> Error! Check logs.</strong>
+						</div>
+						<div class="well well-sm" id="requieredAlert">
+							<strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field! Please fill all area.</strong>
+						</div>
+						<div class="form-group">
+							<label for="InputName">Topic Name</label>
+							<div class="input-group">
+								<input type="text" class="form-control" name="topicInput" id="topicInput" placeholder="Enter Topic Name" required>
+								<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+							</div>
+						</div>
+						<div id="messageForm" class="form-group">
+							<label for="InputMessage">Message</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="messageInput" name="messageInput" placeholder="Enter Message" required>
+								<span id="messageGlyficon" class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+							</div>
+						</div>
+						<input type="submit" name="sendMessageBtn" id="sendMessageBtn" value="Send Message" class="btn btn-info pull-right">
+						<legend>
+						<h3>Response</h3>
+						</legend>
+						<textarea class="form-control" id="responseArea" name="message" placeholder="Waiting Response" rows="5"></textarea>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/client.js"></script>
+</body>
 </html>

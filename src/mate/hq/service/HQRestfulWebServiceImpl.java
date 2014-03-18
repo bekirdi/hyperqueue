@@ -65,7 +65,7 @@ public class HQRestfulWebServiceImpl
         	// example for validation
         	if(message == null)
         	{
-        		validationIssues.add(GenericValidationIssue.create(HQValidationBusinessRules.MESSAGE_EMPTY));
+        		validationIssues.add(GenericValidationIssue.create(HQValidationBusinessRules.INVALID_MESSAGE_FORMAT));
         	}
         	
         	if (!validationIssues.isEmpty()) {

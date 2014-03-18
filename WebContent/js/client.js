@@ -1,5 +1,5 @@
 // The root URL for the RESTful services
-var rootURL = "http://localhost:4430/hyperqueue/rest/queue";
+var rootURL = "https://localhost:4430/hyperqueue/rest/queue";
 
 var currentWine;
 var isProducer = true;
@@ -94,6 +94,7 @@ function parseResponse(data) {
 }
 
 function reset() {
+	$("#responseArea").attr('value', '');
 	$("#topicInput").attr('value', '');
 	$("#messageInput").attr('value', '');
 }
