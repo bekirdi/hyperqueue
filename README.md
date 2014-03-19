@@ -102,7 +102,7 @@ How to configure and deploy project :
 ENJOY !!
 
 Version 1.1 :
-Son as possible
+Soon as possible
 - Add Integration test, unit test
 - Add performance test by using JMeter
 - Add communication with mysql, Cassandra and HBase 
