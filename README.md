@@ -103,10 +103,11 @@ ENJOY !!
 
 Version 1.1 :
 Soon as possible
+- Add validator
 - Add Integration test, unit test
 - Add performance test by using JMeter
 - Add communication with mysql, Cassandra and HBase 
-- Configure the service to can deploy dynamiccaly it in the cloud 
+- Configure the service to can deploy it dynamicaly in the cloud by using bash script
 
 
 
