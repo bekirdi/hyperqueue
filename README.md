@@ -103,12 +103,12 @@ ENJOY !!
 
 Version 1.1 :
 Soon as possible
-- Add script to can checkout and configure project dynamiccaly by using bash script (Linux or Windows)
+- Add script to can checkout and configure project dynamiccaly by using bash script for Linux or  batch script for Windows
 - Add validator
 - Add Integration test, unit test
 - Add performance test by using JMeter
 - Add communication with mysql, Cassandra and HBase 
-- Configure the service to can deploy it dynamicaly in the cloud by using bash script  (Linux or Windows)
+- Configure the service to can deploy it dynamicaly in the cloud by using bash script for Linux or batch script Windows
 
 
 
