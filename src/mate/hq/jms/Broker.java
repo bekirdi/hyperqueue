@@ -22,8 +22,13 @@ public final class Broker
 			concurrentQueueMap.put(topicName, queue);
 		}
 	}
-
-	public Integer getMessage(final String topicName) throws InterruptedException
+	
+	/* TODO : Need to change synchronized by the lock because : 
+	 * - The locks offer unique features that prevent deadlock
+     	 * - Concurrent applications become more robust and efficient
+	 * - Automatic unlocking can increase the risk of errors.
+	 */
+	public synchronized Integer getMessage(final String topicName) throws InterruptedException
 	{
 		if(concurrentQueueMap.containsKey(topicName) && concurrentQueueMap.get(topicName).size() != 0)
 		{
