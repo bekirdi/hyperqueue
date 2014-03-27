@@ -7,10 +7,8 @@ import java.util.concurrent.BlockingQueue;
 
 public final class Broker
 {
-	@SuppressWarnings("rawtypes")
-	public ConcurrentMap<String, BlockingQueue> concurrentQueueMap = new ConcurrentHashMap<String, BlockingQueue>();
+	public ConcurrentMap<String, BlockingQueue<Integer>> concurrentQueueMap = new ConcurrentHashMap<String, BlockingQueue<Integer>>();
     
-	@SuppressWarnings("unchecked")
 	public void putMessage(final String topicName, final Integer message) throws InterruptedException
 	{
 		if(concurrentQueueMap.containsKey(topicName))
